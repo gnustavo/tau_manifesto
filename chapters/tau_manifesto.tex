@@ -1,48 +1,50 @@
-\section{The circle constant} % (fold)
+\section{A constante do círculo} % (fold)
 \label{sec:the_circle_constant}
 
-\href{https://tauday.com/tau-manifesto}{\emph{The Tau Manifesto}} is dedicated to one of the most important numbers in mathematics, perhaps \emph{the} most important: the \emph{circle constant} relating the circumference of a circle to its linear dimension. For millennia, the circle has been considered the most perfect of shapes, and the circle constant captures the geometry of the circle in a single number. Of course, the traditional choice for the circle constant is $\pi$---but, as mathematician \href{https://www.math.utah.edu/~palais/}{Bob Palais} notes in his delightful article ``$\pi$ Is Wrong!'',\footnote{Palais, Robert. ``$\pi$ Is Wrong!'', \emph{The Mathematical Intelligencer}, Volume~23, Number~3, 2001, pp.~7--8. Many of the arguments in \emph{The Tau Manifesto} are based on or are inspired by ``$\pi$ Is Wrong!''. It is available online at \href{https://www.math.utah.edu/~palais/pi.html}{https://www.math.utah.edu/~palais/pi.html}.} $\pi$ \emph{is wrong}. It's time to set things right.
+\href{https://tauday.com/tau-manifesto}{\emph{O Manifesto Tau}} é dedicado a um dos números mais importantes da matemática, talvez \emph{o} mais importante: a \emph{constante do círculo}, relacionando a circunferência de um círculo à sua dimensão linear. Por milênios, o círculo foi considerado a mais perfeita das formas, e a constante do círculo captura a geometria do círculo em um número único. Obviamente, a escolha tradicional para a constante da circunferência é $\pi$---mas, como observa o matemático \href{https://www.math.utah.edu/~palais/}{Bob Palais} em seu delicioso artigo ``$\pi$ está errado!'',\footnote{Palais, Robert. ``$\pi$ está errado!'', \emph{The Mathematical Intelligencer}, Volume~23, Number~3, 2001, pp.~7--8. Muitos dos argumentos de \emph{O Manifesto Tau} são baseados ou inspirados por ``$\pi$ está errado!''. O artigo está disponível online em \href{https://www.math.utah.edu/~palais/pi.html}{https://www.math.utah.edu/~palais/pi.html}.} $\pi$ \emph{está errado}. É hora de acertar as coisas.
 
-  \subsection{An immodest proposal} % (fold)
+  \subsection{Uma proposta imodesta} % (fold)
   \label{sec:an_immodest_proposal}
 
-We begin repairing the damage wrought by $\pi$ by first understanding the notorious number itself. The traditional definition for the circle constant sets $\pi$ (pi) equal to the ratio of a circle's circumference (length) to its diameter (width):\footnote{The symbol $\equiv$ means ``is defined as''.}
+Começamos a reparar os danos causados ​​por $\pi$ compreendendo primeiro o próprio famoso número. A definição tradicional para a constante do círculo estabelece que $\pi$ (pi) é igual à razão entre a circunferência (comprimento) e o diâmetro (largura) de um círculo:\footnote{O símbolo $\equiv$ significa ``é definido como''.}
 \begin{equation}
 \label{eq:pi}
 \pi \equiv \frac{C}{D} = 3.14159265\ldots
 \end{equation}
-The number $\pi$ has many remarkable properties---among other things, it is \href{https://en.wikipedia.org/wiki/Irrational_number}{\emph{irrational}} and indeed \href{https://en.wikipedia.org/wiki/Transcendental_number}{\emph{transcendental}}---and its presence in mathematical formulas is widespread.
+O número $\pi$ tem muitas propriedades notáveis---entre outras coisas, ele é \href{https://pt.wikipedia.org/wiki/N%C3%BAmero_irracional}{\emph{irracional}} e de fato \href{https://pt.wikipedia.org/wiki/N%C3%BAmero_transcendente}{\emph{transcendental}}---e sua presença em fórmulas matemáticas é generalizada.
 
 \begin{figure}
 \image{images/figures/circle.pdf}
-\caption{Anatomy of a circle.\label{fig:circle}}
+\caption{Anatomia de um círculo.\label{fig:circle}}
 \end{figure}
 
-It should be obvious that $\pi$ is not ``wrong'' in the sense of being factually incorrect; the number $\pi$ is perfectly well-defined, and it has all the properties normally ascribed to it by mathematicians. When we say that ``$\pi$ is wrong'', we mean that \emph{$\pi$ is a confusing and unnatural choice for the circle constant}. In particular, a circle is defined as the set of points a fixed distance, the \emph{radius}, from a given point, the \emph{center} (Figure~\ref{fig:circle}). While there are infinitely many shapes with constant width (Figure~\ref{fig:constant_width}),\footnote{Image retrieved from \href{https://commons.wikimedia.org/wiki/File:Reuleaux_triangle_roll.gif}{Wikimedia} on 2019-03-12. Copyright © 2016 by Ruleroll and used unaltered under the terms of the \href{https://creativecommons.org/licenses/by-sa/4.0/deed.en}{Creative Commons Attribution-Share Alike 4.0 International} license.} there is only one shape with constant radius. This suggests that a more natural definition for the circle constant might use $r$ in place of~$D$:
+É óbvio que $\pi$ não está ``errado'' no sentido de estar factualmente incorreto; o número $\pi$ é perfeitamente bem definido e possui todas as propriedades normalmente atribuídas a ele pelos matemáticos. Quando dizemos que ``$\pi$ está errado'', queremos dizer que \emph{$\pi$ é uma escolha confusa e pouco natural para a constante do círculo}. Em particular, um círculo é definido como o conjunto de pontos a uma distância fixa, o \emph{raio}, de um determinado ponto, o \emph{centro} (Figure~\ref{fig:circle}). Embora existam infinitas formas com largura constante (Figure~\ref{fig:constant_width}),\footnote{Imagem obtida de \href{https://commons.wikimedia.org/wiki/File:Reuleaux_triangle_roll.gif}{Wikimedia} em 2019-03-12. Copyright © 2016 de Ruleroll e utilizado sem alteração sob os termos da licença \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{Atribuição-CompartilhaIgual 4.0 Internacional}.} existe apenas uma forma com raio constante. Isso sugere que uma definição mais natural para a constante do círculo poderia usar $r$ no lugar de~$D$:
+of~$D$:
 \begin{equation}
 \label{eq:circle_constant}
-\mbox{circle constant} \equiv \frac{C}{r}.
+\mbox{constante do círculo} \equiv \frac{C}{r}.
 \end{equation}
-Because the diameter of a circle is twice its radius, this number is numerically equal to $2\pi$. Like $\pi$, it is transcendental and hence irrational, and (as we'll see in Section~\ref{sec:the_number_tau}) its use in mathematics is similarly widespread.
+Como o diâmetro de um círculo é o dobro do raio, esse número é numericamente igual a $2\pi$. Como $\pi$, ele é transcendental e, portanto, irracional, e (como veremos na Seção~\ref{sec:the_number_tau}), seu uso na matemática é igualmente difundido.
 
 \begin{figure}
 \image{images/figures/Reuleaux_triangle_roll.pdf}
-\caption{One of the infinitely many non-circular shapes with constant width.\label{fig:constant_width}}
+\caption{Uma das infinitas formas não circulares com largura constante.\label{fig:constant_width}}
 \end{figure}
 
-In ``$\pi$ Is Wrong!'', Bob Palais argues persuasively in favor of the second of these two definitions for the circle constant, and in my view he deserves principal credit for identifying this issue and bringing it to a broad audience. He calls the true circle constant ``one turn'', and he also introduces a new symbol to represent it (Figure~\ref{fig:palais_tau}). As we'll see, the description is prescient, but unfortunately the symbol is rather strange, and (as discussed in Section~\ref{sec:conflict_and_resistance}) it seems unlikely to gain wide adoption. (\emph{Update}: This indeed proved to be the case, and Palais himself has since become a strong supporter of the arguments in this manifesto.)
+Em ``$\pi$ está errado!'', Bob Palais argumenta de forma persuasiva a favor da segunda dessas duas definições para a constante do círculo, e, na minha opinião, ele merece o crédito principal por identificar esse problema e levá-lo a uma ampla audiência. Ele chama a verdadeira constante do círculo de ``uma volta'' e também introduz um novo símbolo para representá-lo (Figura~\ref{fig:palais_tau}). Como veremos, a descrição é presciente, mas infelizmente o símbolo é bastante estranho e (como discutido na Seção~\ref{sec:conflict_and_resistance}), parece improvável que obtenha ampla adoção. (\emph{Atualização}: Isso provou ser realmente o caso, e o próprio Palais se tornou um forte defensor dos argumentos deste manifesto.)
 
 \begin{figure}
 \imagebox{images/figures/palais-tau.png}
-\caption{The strange symbol for the circle constant from ``$\pi$ Is Wrong!''.\label{fig:palais_tau}}
+\caption{O estranho símbolo para a constante do círculo em ``$\pi$ está errado!''.\label{fig:palais_tau}}
 \end{figure}
 
-\emph{The Tau Manifesto} is dedicated to the proposition that the proper response to ``$\pi$ is wrong'' is ``No, \emph{really}.'' And the true circle constant deserves a proper name. As you may have guessed by now, \emph{The Tau Manifesto} proposes that this name should be the Greek letter $\tau$ (tau):
+\emph{O Manifesto Tau} é dedicado à proposição de que a melhor resposta a ``$\pi$ está errado'' é ``Não, \emph{é sério}". E a verdadeira constante do círculo merece um nome adequado. Como você já deve ter adivinhado, \emph{O Manifesto Tau} propõe que esse nome seja a letra grega $\tau$ (tau):
+
 \begin{equation}
 \label{eq:tau}
 \tau \equiv \frac{C}{r} = 6.283185307179586\ldots
 \end{equation}
-Throughout the rest of this manifesto, we will see that the \emph{number} $\tau$ is the correct choice, and we will show through usage (Section~\ref{sec:the_number_tau} and Section~\ref{sec:circular_area}) and by direct argumentation (Section~\ref{sec:conflict_and_resistance}) that the \emph{letter} $\tau$ is a natural choice as well.
+No resto deste manifesto, veremos que o \emph{número} $\tau$ é a escolha correta e mostraremos através do uso (Seção~\ref{sec:the_number_tau} e Seção~\ref{sec:circular_area?) e por argumentação direta (Seção~\ref{sec:conflict_and_resistance}) que a letra $\tau$ também é uma escolha natural.
 
 \subsection{A powerful enemy} % (fold)
  \label{sec:a_powerful_enemy}

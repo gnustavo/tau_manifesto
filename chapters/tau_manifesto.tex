@@ -188,39 +188,39 @@ Finalmente, comparando a Figura~\ref{fig:pi_angles} com a Figura~\ref{fig:tau_an
 
 Esses fatores desnecessários de $2$ decorrentes do uso de $\pi$ são irritantes por si só, mas muito mais séria é a sua tendência a se \emph{cancelar} quando divididos por qualquer número par. Esses resultados absurdos, como a \emph{metade} de $\pi$ para um \emph{quarto} de volta, ocultam a relação subjacente entre a medida do ângulo e a constante do círculo. Aos que dizem que ``não importa'' se usamos $\pi$ ou $\tau$ quando ensinamos trigonometria, peço apenas que vejam a Figura~\ref{fig:pi_angles}, a Figura~\ref{fig:angle_fractions} e a Figura~\ref{fig:tau_angles} através dos olhos de uma criança. Vocês verão que, da perspectiva de um iniciante, \href{https://tauday.com/a-tau-testimonial}{\emph{usar $\pi$ ao invés de $\tau$ é um desastre pedagógico}}.
 
-  \subsection{The circle functions} % (fold)
+  \subsection{As funções do círculo} % (fold)
   \label{sec:the_circle_functions}
 
-Although radian angle measure provides some of the most compelling arguments for the true circle constant, it's worth comparing the virtues of $\pi$ and $\tau$ in some other contexts as well. We begin by considering the important elementary functions $\sin\theta$ and $\cos\theta$. Known as the ``circle functions''  because they give the coordinates of a point on the \emph{unit circle} (i.e., a circle with radius~$1$), sine and cosine are the fundamental functions of trigonometry (Figure~\ref{fig:circle_functions}).
+Embora a medida do ângulo radiano forneça alguns dos argumentos mais convincentes para a verdadeira constante do círculo, vale a pena comparar as virtudes de $\pi$ e $\tau$ em alguns outros contextos também. Começamos considerando as importantes funções elementares $\sin\theta$ e $\cos\theta$. Conhecidas como as ``funções do círculo'', porque fornecem as coordenadas de um ponto no \emph{círculo unitário} (isto é, um círculo com raio~$1$), seno e cosseno são as funções fundamentais da trigonometria (Figura~\ref{fig:circle_functions}).
 
 \begin{figure}
 \begin{center}
 \image{images/figures/circle-functions.pdf}
 \end{center}
-\caption{The circle functions are coordinates on the unit circle.\label{fig:circle_functions}}
+\caption{As funções do círculo são coordenadas no círculo unitário.\label{fig:circle_functions}}
 \end{figure}
 
-Let's examine the graphs of the circle functions to better understand their behavior.\footnote{These graphs were produced with the help of \href{https://www.wolframalpha.com/}{Wolfram|Alpha}.} You'll notice from Figure~\ref{fig:sine_with_tau} and Figure~\ref{fig:cosine_with_tau} that both functions are \emph{periodic} with period $T$. As shown in Figure~\ref{fig:sine_with_tau}, the sine function $\sin\theta$ starts at zero, reaches a maximum at a quarter period, passes through zero at a half period, reaches a minimum at three-quarters of a period, and returns to zero after one full period. Meanwhile, the cosine function $\cos\theta$ starts at a maximum, has a minimum at a half period, and passes through zero at one-quarter and three-quarters of a period  (Figure~\ref{fig:cosine_with_tau}). For reference, both figures show the value of $\theta$ (in radians) at each special point.
+Vamos examinar os gráficos das funções do círculo para entender melhor seu comportamento.\footnote{Estes gráficos foram produzidos com a ajuda do \href{https://www.wolframalpha.com/}{Wolfram|Alpha}.} Você verá na Figura~\ref{fig:sine_with_tau} e na Figura~\ref{fig:cosine_with_tau} que as duas funções são \emph{periódicas} com período $T$. Como mostra a Figura~\ref{fig:sine_with_tau}, a função seno $\sin\theta$ começa em zero, atinge o máximo em um quarto de período, passa pelo zero em meio período, atinge o mínimo em três quartos de período e retorna a zero após um período completo. Enquanto isso, a função cosseno $\cos\theta$ começa no máximo, tem um mínimo em meio período e passa pelo zero em um quarto e em três quartos de período (Figura~\ref{fig:cosine_with_tau}). Para referência, as duas figuras mostram o valor de $\theta$ (em radianos) em cada ponto especial.
 
 \begin{figure}
 \begin{center}
 \image{images/figures/sine-with-tau.pdf}
 \end{center}
-\caption{Important points for $\sin\theta$ in terms of the period $T$.\label{fig:sine_with_tau}}
+\caption{Pontos importantes de $\sin\theta$ em termos do período $T$.\label{fig:sine_with_tau}}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \image{images/figures/cosine-with-tau.pdf}
 \end{center}
-\caption{Important points for $\cos\theta$ in terms of the period $T$.\label{fig:cosine_with_tau}}
+\caption{Pontos importantes de $\cos\theta$ em termos do período $T$.\label{fig:cosine_with_tau}}
 \end{figure}
 
-Of course, since sine and cosine both go through one full cycle during one turn of the circle, we have $T = \tau$; i.e., the circle functions have periods equal to the circle constant. As a result, the ``special'' values of $\theta$ are utterly natural: a quarter-period is $\tau/4$, a half-period is $\tau/2$, etc. In fact, when making Figure~\ref{fig:sine_with_tau}, at one point I found myself wondering about the numerical value of $\theta$ for the zero of the sine function. Since the zero occurs after half a period, and since $\tau \approx 6.28$, a quick mental calculation led to the following result:
+Obviamente, como tanto o seno quanto o cosseno passam por um ciclo completo durante uma volta do círculo, temos que $T = \tau$; ou seja, as funções do círculo têm períodos iguais à constante do círculo. Como resultado, os valores ``especiais'' de $\theta$ são absolutamente naturais: um quarto de período é $\tau/4$, meio período é $\tau/2$, etc. De fato, ao criar a Figura~\ref{fig:sine_with_tau}, a certa altura, me peguei pensando sobre o valor numérico de $\theta$ para o zero da função seno. Como o zero ocorre após meio período e como $\tau \approx 6.28$, um cálculo mental rápido levou ao seguinte resultado:
 \[
   \theta_\mathrm{zero} = \frac{\tau}{2} \approx 3.14.
 \]
- That's right: I was astonished to discover that \emph{I had already forgotten that $\tau/2$ is sometimes called ``$\pi$''.} Perhaps this even happened to you just now. Welcome to my world.
+É isso mesmo: fiquei surpreso ao descobrir que \emph{eu já havia esquecido que $\tau/2$ às vezes é chamado de ``$\pi$''}. Talvez isso tenha acontecido com você agora. Bem-vindo ao meu mundo.
 
   % subsection the_circle_functions (end)
 

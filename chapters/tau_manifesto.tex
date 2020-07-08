@@ -281,21 +281,21 @@ e^{i\tau} = 1 + 0.
 \end{equation}
 A Eq.~\eqref{eq:euler_tau_zero}, \emph{sem} reorganização, na verdade relaciona os cinco números mais importantes da matemática: $0$, $1$, $e$, $i$ e $\tau$.\footnote{De fato, a Eq.~\eqref{eq:eulers_identity_tau} pode ser escrita como $e^{i\tau} = 1 + 0i$, o que torna a relação entre os cinco números ainda mais explícita.}
 
-      \subsubsection{Eulerian identities} % (fold)
+      \subsubsection{Identidades eulerianas} % (fold)
       \label{sec:eulerian_identities}
 
-Since you can add zero anywhere in any equation, the introduction of $0$ in Eq.~\eqref{eq:euler_tau_zero} is a somewhat tongue-in-cheek counterpoint to $e^{i\pi} + 1 = 0$, but the identity $e^{i\pi} = -1$ does have a more serious point to make. Let's see what happens when we rewrite it in terms of $\tau$:
+Como você pode adicionar zero em qualquer lugar de qualquer equação, a introdução de $0$ na Eq.~\eqref{eq:euler_tau_zero} é um contraponto um tanto irônico a $e^{i\pi} + 1 = 0$, mas a identidade $e^{i\pi} = -1$ tem algo sério a dizer. Vejamos o que acontece quando a reescrevemos em termos de $\tau$:
 \[
 e^{i\tau/2} = -1.
 \]
-Geometrically, this says that a rotation by half a turn is the same as multiplying by $-1$. And indeed this is the case: under a rotation of $\tau/2$ radians, the complex number $z = a + ib$ gets mapped to $-a - ib$, which is in fact just $-1\cdot z$.
+Geometricamente, issi diz que uma rotação de meia volta é o mesmo que multiplicar por $-1$. E, de fato, é esse o caso: quando rotacionado $\tau/2$ radianos, o número complexo $z = a + ib$ é mapeado para $-a - ib$, que é de fato apenas $-1\cdot z$.
 
-Written in terms of $\tau$, we see that the ``original'' form of Euler's identity (Eq.~\eqref{eq:eulers_identity_pi}) has a transparent geometric meaning that it lacks when written in terms of $\pi$. (Of course, $e^{i\pi} = -1$ can be interpreted as a rotation by $\pi$ radians, but the near-universal rearrangement to form $e^{i\pi} + 1 = 0$ shows how using $\pi$ distracts from the identity's natural geometric meaning.) The quarter-angle identities have similar geometric interpretations: evaulating Eq.~\eqref{eq:eulers_formula} at $\tau/4$ gives $e^{i\tau/4} = i$, which says that a quarter turn in the complex plane is the same as multiplication by~$i$; similarly, $e^{i\cdot(3\tau/4)} = -i$ says that three-quarters of a turn is the same as multiplication by~$-i$. A summary of these results, which we'll call \emph{Eulerian identities}, appears in Table~\ref{table:eulerian_identities}.
+Escrita em termos de $\tau$, vemos que a forma ``original'' da identidade de Euler (Eq.~\eqref{eq:eulers_identity_pi}) tem um significado geométrico transparente que faz falta quando escrita em termos de $\pi$. (Obviamente, $e^{i\pi} = -1$ pode ser interpretado como uma rotação de $\pi$ radianos, mas a reorganização quase universal para formar $e^{i\pi} + 1 = 0$ mostra como usar $\pi$ desvia a atenção do significado geométrico natural da identidade.) As identidades de quarto de ângulo têm interpretações geométricas similares: avaliando a Eq.~\eqref{eq:eulers_formula} em $\tau/4$ \fixme{dá} $e^{i\tau/4} = i$, que significa que um quarto de volta no plano complexo é o mesmo que multiplicar por~$i$; similarmente, $e^{i\cdot(3\tau/4)} = -i$ significa que três quartos de volta é o mesmo que multiplicar por~$-i$. Um resumo desses resultados, que chamaremos de \emph{identidades eulerianas}, aparece na Tabela~\ref{table:eulerian_identities}.
 
 \begin{table}
 \begin{center}
 \begin{tabular}{cllr}
-Rotation angle & \multicolumn{3}{c}{Eulerian identity} \\ \hline
+Ângulo de rotação & \multicolumn{3}{c}{Identidade euleriana} \\ \hline
 $0$ & $e^{i\cdot0}$ & $ = $ & $1$ \smallskip \\
 $\tau/4$ & $e^{i\tau/4}$ & $ = $ & $i$ \smallskip \\
 $\tau/2$ & $e^{i\tau/2}$ & $ = $ & $-1$ \smallskip \\
@@ -303,15 +303,15 @@ $3\tau/4$ & $e^{i\cdot(3\tau/4)}$ & $ = $ & $-i$ \smallskip \\
 $\tau$ & $e^{i\tau}$ & $ = $ & $1$
 \end{tabular}
 \end{center}
-\caption{Eulerian identities for half, quarter, and full rotations.\label{table:eulerian_identities}}
+\caption{Identidades eulerianas para rotações de meia-volta, quarto de volta e volta completa.\label{table:eulerian_identities}}
 \end{table}
 
-We can take this analysis a step further by noting that, for any angle~$\theta$, $e^{i\theta}$ can be interpreted as a point lying on the unit circle in the complex plane. Since the complex plane identifies the horizontal axis with the real part of the number and the vertical axis with the imaginary part, Euler's formula tells us that $e^{i\theta}$ corresponds to the coordinates $(\cos\theta, \sin\theta)$. Plugging the values of the ``special'' angles from Figure~\ref{fig:tau_angles} into Eq.~\eqref{eq:eulers_formula} then gives the points shown in Table~\ref{table:complex_exponentials}, and plotting these points in the complex plane yields Figure~\ref{fig:tau_euler_circle}. A comparison of Figure~\ref{fig:tau_euler_circle} with Figure~\ref{fig:tau_angles} quickly dispels any doubts about which choice of circle constant better reveals the relationship between Euler's formula and the geometry of the circle.
+Podemos levar essa análise um passo adiante observando que, para qualquer ângulo~$\theta$, $e^{i\theta}$ pode ser interpretado como um ponto localizado no círculo unitário no plano complexo. Como o plano complexo identifica o eixo horizontal com a parte real do número e o eixo vertical com a parte imaginária, a fórmula de Euler nos diz que $e^{i\theta}$ corresponde às coordenadas $(\cos\theta, \sin\theta)$. Substituindo os valores dos ângulos ``especiais'' da Figura~\ref{fig:tau_angles} na Eq.~\eqref{eq:eulers_formula} fornece, então, os pontos mostrados na Tabela~\ref{table:complex_exponentials} e, plotando esses pontos no plano complexo, produz a Figura~\ref{fig:tau_euler_circle}. Uma comparação da Figura~\ref{fig:tau_euler_circle} com a Figura~\ref{fig:tau_angles} imediatamente elimina quaisquer dúvidas sobre qual opção de constante do círculo revela melhor a relação entre a fórmula de Euler e a geometria do círculo.
 
 \begin{table}
 \begin{center}
 \begin{tabular}{lcc}
-Polar form & Rectangular form & Coordinates \\ \hline\hline
+Forma polar & Forma Retangular & Coordenadas \\ \hline\hline
 $e^{i\theta}$ & $\cos\theta + i\sin\theta$ & $(\cos\theta, \sin\theta)$ \\ \hline
 $e^{i\cdot0}$ & $1$ & $(1, 0)$ \smallskip \\
 $e^{i\tau/12}$ & $\frac{\sqrt{3}}{2} + \frac{1}{2}i$ & $(\frac{\sqrt{3}}{2}, \frac{1}{2})$ \smallskip \\
@@ -324,14 +324,14 @@ $e^{i\cdot(3\tau/4)}$ & $-i$ & $(0, -1)$ \smallskip \\
 $e^{i\tau}$ & $1$ & $(1, 0)$
 \end{tabular}
 \end{center}
-\caption{Complex exponentials of the special angles from Figure~\ref{fig:tau_angles}.\label{table:complex_exponentials}}
+\caption{Exponenciais complexas dos ângulos especiais da Figura~\ref{fig:tau_angles}.\label{table:complex_exponentials}}
 \end{table}
 
 \begin{figure}
 \begin{center}
 \image{images/figures/tau_euler_circle.pdf}
 \end{center}
-\caption{Complex exponentials of some special angles, plotted in the complex plane.\label{fig:tau_euler_circle}}
+\caption{Exponenciais complexas de alguns ângulos especiais, plotadas no plano complexo.\label{fig:tau_euler_circle}}
 \end{figure}
 
       % subsubsection eulerian_identities (end)

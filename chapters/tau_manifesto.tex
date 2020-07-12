@@ -782,14 +782,14 @@ Que eu saiba, as Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambd
 
 % subsubsection lambda (end)
 
-\subsubsection{Recurrences} % (fold)
+\subsubsection{Recorrências} % (fold)
 \label{sec:recurrences}
 
-We've now seen, via Eq.~\eqref{eq:surface_area_lambda} and Eq.~\eqref{eq:volume_lambda}, that the surface area and volume formulas are simplest in terms of the right angle~$\lambda$. Nevertheless, we're still not done with $\tau$.
+Já vimos, através das Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambda}, que as fórmulas da área superficial e do volume são mais simples em termos do ângulo reto~$\lambda$. No entanto, ainda não acabamos com $\tau$.
 
-As seen in Eq.~\eqref{eq:volume_lambda}, the volume formula divides naturally into two families, corresponding to even- and odd-dimensional spaces, respectively. This means that the four-dimensional volume, $V_4$, is related simply to $V_2$ but not to $V_3$, while $V_3$ is related to $V_1$ but not to $V_2$. How exactly are they related?
+Como vimos na Eq.~\eqref{eq:volume_lambda}, a fórmula do volume se divide naturalmente em duas famílias, correspondendo a espaços de dimensões pares e ímpares, respectivamente. Isso significa que o volume quadridimensional, $V_4$, está relacionado de modo simples a $V_2$ mas não a $V_3$, enquanto $V_3$ está relacionado a $V_1$ mas não a $V_2$. Qual é exatamente esta relacão?
 
-We can find the answer by deriving the \emph{recurrence relations} between dimensions.\footnote{The article ``\href{http://www2.math.uconn.edu/~mariano/research/MathClubsp14\%20.pdf}{The volume of the unit ball in \emph{n} dimensions}'' by Phanuel A. Mariano contains an alternate derivation of these important recurrences.} In particular, let's divide the volume of an $n$-dimensional sphere by the volume for an $(n-2)$-dimensional sphere:
+Podemos encontrar a resposta derivando as \emph{relações de recorrência} entre dimensões.\footnote{O artigo ``\href{http://www2.math.uconn.edu/~mariano/research/MathClubsp14\%20.pdf}{The volume of the unit ball in \emph{n} dimensions}'', de Phanuel A. Mariano, contém uma derivação alternativa dessas importantes recorrências.} Em particular, vamos dividir o volume de uma esfera $n$-dimensional pelo volume de uma esfera $(n-2)$-dimensional:
 \begin{equation}
 \label{eq:volume_recurrence}
 \begin{split}
@@ -801,9 +801,9 @@ We can find the answer by deriving the \emph{recurrence relations} between dimen
 \\ & = \frac{2^2\lambda}{n}\,r^2.
 \end{split}
 \end{equation}
-We see from Eq.~\eqref{eq:volume_recurrence} that we can obtain the volume of an $n$-sphere simply by multiplying the formula for an $(n-2)$-sphere by $r^2$ (a factor required by dimensional analysis), dividing by $n$, and multiplying by the ``recurrence constant'' $2^2\lambda$.
+Vemos da Eq.~\eqref{eq:volume_recurrence} que podemos obter o volume de uma $n$-esfera simplesmente multiplicando a fórmula para uma $(n-2)$-esfera por $r^2$ (um fator exigido pela análise dimensional), dividindo por $n$ e multiplicando pela ``constante de recorrência'' $2^2\lambda$.
 
-Similarly, for the surface area we have
+Da mesma forma, para a área de superfície, temos
 \begin{equation}
 \label{eq:surface_area_recurrence}
 \begin{split}
@@ -815,9 +815,9 @@ Similarly, for the surface area we have
 \\ & = \frac{2^2\lambda}{n-2}\,r^2,
 \end{split}
 \end{equation}
-with the same recurrence constant $2^2\lambda$.
+com a mesma constante de recorrência $2^2\lambda$.
 
-Thus, in both Eq.~\eqref{eq:volume_recurrence} and Eq.~\eqref{eq:surface_area_recurrence}, the constant relating the different dimensions is not $\lambda$ itself but rather the combination $2^2\lambda$. Comparing with Eq.~\eqref{eq:tau_lambda}, we see this is none other than $\tau$! Indeed, an \href{https://en.wikipedia.org/wiki/Volume_of_an_n-ball#The_two-dimension_recursion_formula}{alternate derivation} of the volume recurrence by direct calculation (which uses $R$ where we write $r$) concludes with the integral
+Assim, em ambas as Eq.~\eqref{eq:volume_recurrence} e Eq.~\eqref{eq:surface_area_recurrence}, a constante que relaciona as diferentes dimensões não é $\lambda$ propriamente, mas a combinação $2^2\lambda$. Comparando com a Eq.~\eqref{eq:tau_lambda}, vemos que esse não é outro senão $\tau$! De fato, uma \href{https://en.wikipedia.org/wiki/Volume_of_an_n-ball#The_two-dimension_recursion_formula}{derivação alternativa} da recorrência do volume por cálculo direto (que usa $R$ onde escrevemos $r$) conclui com a integral
 \begin{equation}
 \label{eq:integral_recurrence}
 \begin{split}
@@ -826,23 +826,23 @@ V_n(R) & = \int_0^\tau \int_0^R V_{n-2}\left(\sqrt{R^2 - r^2}\right) \,r\,dr\,d\
        & = \frac{\tau R^2}{n} V_{n-2}(R),
 \end{split}
 \end{equation}
-thus showing that the identification of $\tau$ as the ``recurrence constant'' isn't a coincidence---the recurrence constant and the circle constant really are one and the same:
+mostrando assim que a identificação de $\tau$ como a ``constante de recorrência'' não é uma coincidência---a constante de recorrência e a constante do círculo são realmente as mesmas:
 \[
 \begin{split}
-\tau & = \mbox{circle constant} \\
-     & = \mbox{recurrence constant} = 2^2\lambda.
+\tau & = \mbox{constante do círculo} \\
+     & = \mbox{constante de recorrência} = 2^2\lambda.
 \end{split}
 \]
-As a result, it is $\tau$, not $\lambda$, that provides the common thread tying together the two families of even and odd solutions, as illustrated by Joseph Lindenberg in \href{http://sites.google.com/site/taubeforeitwascool/}{Tau Before It Was Cool} (Figure~\ref{fig:Nspheres}).\footnote{\href{http://sites.google.com/site/taubeforeitwascool/}{Tau Before It Was Cool} actually writes the recurrence in terms of $2\pi$; the version shown in Figure~\ref{fig:Nspheres} was created for me by special request. As always, I am most grateful to Joseph Lindenberg for his continuing generosity and support.}
+Como resultado, é $tau$, não $\lambda$, que fornece o fio comum que une as duas famílias de soluções pares e ímpares, conforme ilustrado por Joseph Lindenberg em \href{http://sites.google.com/site/taubeforeitwascool/}{Tau Before It Was Cool} (Figura~\ref{fig:Nspheres}). \footnote{\href{http://sites.google.com/site/taubeforeitwascool/}{Tau Before It Was Cool} na verdade, escreve a recorrência em termos de $2\pi$; a versão mostrada na Figura~\ref{fig:Nspheres} foi criada para mim por uma solicitação especial. Como sempre, sou muito grato a Joseph Lindenberg por sua generosidade e apoio contínuos.}
 
 \begin{figure}
 \begin{center}
 \image{images/figures/Nspheres.png}
 \end{center}
-\caption{Surface area and volume recurrences.\label{fig:Nspheres}}
+\caption{Área de superfície e recorrências de volume.\label{fig:Nspheres}}
 \end{figure}
 
-When discussing general $n$-dimensional spheres, for convenience \linebreak we'll write the surface area and volume formulas in terms of $\lambda$ as in Eq.~\eqref{eq:surface_area_lambda} and Eq.~\eqref{eq:volume_lambda}, but for any given $n$ we'll express the results in terms of the recurrence constant $\tau$.
+Ao discutir esferas $n$-dimensionais em geral, por conveniência, \linebreak escreveremos as fórmulas da área de superfície e de volume em termos de $\lambda$ como nas Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambda}, mas para um $n$ qualquer expressaremos os resultados em termos da constante de recorrência $\tau$.
 
 % subsubsection recurrences (end)
 

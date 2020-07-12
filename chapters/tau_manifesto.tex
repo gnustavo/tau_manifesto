@@ -9,7 +9,7 @@
 Começamos a reparar os danos causados ​​por $\pi$ compreendendo primeiro o próprio famoso número. A definição tradicional para a constante do círculo estabelece que $\pi$ (pi) é igual à razão entre a circunferência (comprimento) e o diâmetro (largura) de um círculo:\footnote{O símbolo $\equiv$ significa ``é definido como''.}
 \begin{equation}
 \label{eq:pi}
-\pi \equiv \frac{C}{D} = 3.14159265\ldots
+\pi \equiv \frac{C}{D} = 3,14159265\ldots
 \end{equation}
 O número $\pi$ tem muitas propriedades notáveis---entre outras coisas, ele é \href{https://pt.wikipedia.org/wiki/N%C3%BAmero_irracional}{\emph{irracional}} e de fato \href{https://pt.wikipedia.org/wiki/N%C3%BAmero_transcendente}{\emph{transcendental}}---e sua presença em fórmulas matemáticas é generalizada.
 
@@ -849,67 +849,67 @@ Ao discutir esferas $n$-dimensionais em geral, por conveniência, \linebreak esc
 
   % subsection volume_of_a_hypersphere (end)
 
-  \subsection{Three families of constants} % (fold)
+  \subsection{Três famílias de constantes} % (fold)
   \label{sec:three_families_of_constants}
 
-Equipped with the tools developed in Section~\ref{sec:volume_of_a_hypersphere}, we're now ready to get to the bottom of $\pi$ and $\tau$. To complete the excavation, we'll use Eq.~\eqref{eq:surface_area_lambda} and Eq.~\eqref{eq:volume_lambda} to define two families of constants, and then use the definition of $\pi$ (Eq.~\eqref{eq:pi}) to define a third, thereby revealing exactly what is wrong with $\pi$.
+Equipado com as ferramentas desenvolvidas na Seção~\ref{sec:volume_of_a_hypersphere}, estamos agora prontos para chegar ao fundo da questão sobre $\pi$ e $\tau$. Para concluir a escavação, usaremos as Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambda} para definir duas famílias de constantes e, em seguida, usar a definição de $\pi$ (Eq.~\eqref{eq:pi}) para definir um terceiro, revelando assim exatamente o que há de errado com $\pi$.
 
-First, we'll define a family of ``surface area constants'' $\tau_n$ by dividing \linebreak Eq.~\eqref{eq:surface_area_lambda} by $r^{n-1}$, the power of $r$ needed to yield a dimensionless constant for each value of~$n$:
+Primeiro, definiremos uma família de ``constantes da área de superfície'' $\tau_n$ dividindo \linebreak a Eq.~\eqref{eq:surface_area_lambda} por $r^{n-1}$, a potência de $r$ necessária para produzir uma constante adimensional para cada valor de~$n$:
 \begin{equation}
 \label{eq:surface_area_constants}
 \tau_n \equiv \frac{S_n(r)}{r^{n-1}} = \frac{2^n\,\lambda^{\left\lfloor \frac{n}{2} \right\rfloor}}{(n-2)!!}
 \end{equation}
-Second, we'll define a family of ``volume constants'' $\sigma_n$ by dividing the volume formula Eq.~\eqref{eq:volume_lambda} by $r^n$, again yielding a dimensionless constant for each value of~$n$:
+Segundo, definiremos uma família de ``constantes de volume'' $\sigma_n$ dividindo a fórmula do volume Eq.~\eqref{eq:volume_lambda} por $r^n$, produzindo novamente uma constante adimensional para cada valor de~$n$:
 \begin{equation}
 \label{eq:volume_constants}
 \sigma_n \equiv \frac{V_n(r)}{r^n} = \frac{2^n\,\lambda^{\left\lfloor \frac{n}{2} \right\rfloor}}{n!!}.
 \end{equation}
-With the two families of constants defined in Eq.~\eqref{eq:surface_area_constants} and Eq.~\eqref{eq:volume_constants}, we can write the surface area and volume formulas (Eq.~\eqref{eq:surface_area_lambda} and Eq.~\eqref{eq:volume_lambda}) compactly as follows:
+Com as duas famílias de constantes definidas pelas Eq.~\eqref{eq:surface_area_constants} e Eq.~\eqref{eq:volume_constants}, podemos escrever as fórmulas da área de superfície e do volume (Eq.~\eqref{eq:surface_area_lambda} and Eq.~\eqref{eq:volume_lambda}) de modo compacto da seguinte forma:
 \[ S_n(r) = \tau_n\,r^{n-1} \]
-and
+e
 \[ V_n(r) = \sigma_n\,r^n. \]
-Because of the relation $V_n(r) = \int S_n(r)\,dr$, we have the simple relationship
+Por causa da relação $V_n(r) = \int S_n(r)\,dr$, temos a relação simples
 \[
 \sigma_n = \frac{\tau_n}{n}.
 \]
 
-Let us make some observations about these two families of constants. The family $\tau_n$ has an important geometric meaning: by setting $r=1$ in Eq.~\eqref{eq:surface_area_constants}, we see that each $\tau_n$ is the surface area of a unit $n$-sphere, which is also the angle measure of a full $n$-sphere. In particular, by writing $s_n(r)$ as the $n$-dimensional ``arclength'' equal to a fraction~$f$ of the full surface area~$S_n(r)$, we have
+Vamos fazer algumas observações sobre essas duas famílias de constantes. A família $\tau_n$ tem um significado geométrico importante: fazendo $r=1$ na Eq.~\eqref{eq:surface_area_constants}, vemos que cada $\tau_n$ é a área de superfície de uma $n$-esfera unitária, que também é a medida do ângulo de uma $n$-esfera completa. Em particular, escrevendo $s_n(r)$ como o ``comprimento de arco'' $n$-dimensional igual a uma fração~$f$ da área total da superfície~$S_n(r)$, temos
 \[
 \theta_n \equiv \frac{s_n(r)}{r^{n-1}} = \frac{f S_n(r)}{r^{n-1}} = f\left(\frac{S_n(r)}{r^{n-1}}\right) = f\tau_n.
 \]
-Here $\theta_n$ is simply the $n$-dimensional generalization of radian angle measure, and we see that $\tau_n$ is the generalization of ``one turn'' to $n$ dimensions, which explains why the 2-sphere (circle) constant $\tau_2 = 2^2\lambda = \tau$ leads naturally to the diagram shown in Figure~\ref{fig:tau_angles}. Furthermore, we learned in Section~\ref{sec:volume_of_a_hypersphere} that $\tau_2$ is also the ``recurrence constant'' for $n$-sphere surface areas and volumes.
+Aqui $\theta_n$ é simplesmente a generalização $n$-dimensional da medida do ângulo radiano, e vemos que $\tau_n$ é a generalização de ``uma volta'' para $n$ dimensões, o que explica por que a constante $\tau_2 = 2^2\lambda = \tau$ da 2-esfera (círculo) leva naturalmente ao diagrama mostrado na Figura~\ref{fig:tau_angles}. Além disso, aprendemos na Seção~\ref{sec:volume_of_a_hypersphere} que $\tau_2$ também é a ``constante de recorrência'' para áreas de superfície e volumes de $n$-esferas.
 
-Meanwhile, the $\sigma_n$ are the volumes of unit $n$-spheres. In particular, $\sigma_2$ is the area of a unit disk:
+Enquanto isso, os $\sigma_n$ são os volumes das $n$-esferas unitárias. Em particular, $\sigma_2$ é a área de um disco unitário:
 \[
 \sigma_2 = \frac{\tau_2}{2} = \frac{\tau}{2}.
 \]
-This shows that $\sigma_2 = \tau/2 = 3.14159\ldots$ does have an independent geometric significance. Note, however, that \emph{it has nothing to do with circumferences or diameters}. In other words, \emph{$\pi = C/D$ is not a member of the family~$\sigma_n$}.
+Isto mostra que $\sigma_2 = \tau/2 = 3,14159\ldots$ tem mesmo um significado geométrico independente. Note, no entanto, que \emph{isso não tem nada a ver com circunferências ou diâmetros}. Em outras palavras, \emph{$\pi = C/D$ não é um membro da família~$\sigma_n$}.
 
-So, to which family of constants does $\pi$ naturally belong?
-Let's rewrite Eq.~\eqref{eq:pi} in terms more appropriate for generalization to higher dimensions:
+Então, a qual família de constantes $\pi$ pertence naturalmente?
+Vamos reescrever a Eq.~\eqref{eq:pi} em termos mais apropriados para generalizações a dimensões superiores:
 \[
 \pi = \frac{C}{D} = \frac{S_2}{D^{2-1}}.
 \]
-We thus see that $\pi$ is naturally associated with surface areas divided by the power of the diameter necessary to yield a dimensionless constant. This suggests introducing a third family of constants~$\pi_n$:
+Vemos assim que $\pi$ é associado naturalmente a áreas de superfície divididas pela potência do diâmetro necessário para produzir uma constante adimensional. Isso sugere a introdução de uma terceira família de constantes~$\pi_n$:
 \begin{equation}
 \label{eq:diameter_constants}
 \pi_n \equiv \frac{S_n(r)}{D^{n-1}}.
 \end{equation}
-We can express this in terms of the family $\tau_n$ by substituting $D = 2r$ in Eq.~\eqref{eq:diameter_constants} and applying Eq.~\eqref{eq:surface_area_constants}:
+Podemos expressar isso em termos da família $\tau_n$ substituindo $D = 2r$ na Eq.~\eqref{eq:diameter_constants} e aplicando a Eq.~\eqref{eq:surface_area_constants}:
 \[
 \pi_n = \frac{S_n(r)}{D^{n-1}} = \frac{S_n(r)}{(2r)^{n-1}} =
 \frac{S_n(r)}{2^{n-1}r^{n-1}} = \frac{\tau_n}{2^{n-1}}.
 \]
 
-We are now finally in a position to understand exactly what is wrong with $\pi$. The principal geometric significance of $3.14159\ldots$ is that it is the area of a unit disk. But this number comes from evaluating $\sigma_n = \tau_n/n$ when $n=2$:
+Estamos agora finalmente em posição de entender exatamente o que há de errado com $\pi$. O principal significado geométrico de $3,14159\ldots$ é que ele é a área de um disco unitário. Mas esse número vem da avaliação de $\sigma_n = \tau_n/n$ quando $n=2$:
 \[
 \sigma_2 = \frac{\tau_2}{2} = \frac{\tau}{2}.
 \]
-It's true that this equals $\pi_2$:
+É fato que isso é igual a $\pi_2$:
 \[
 \pi_2 = \pi = \frac{\tau_2}{2^{2-1}} = \frac{\tau}{2}.
 \]
-But this equality is a coincidence: it occurs only because $2^{n-1}$ happens to equal $n$ when $n=2$ (that is, $2^{2-1} = 2$). In all higher dimensions, $n$ and $2^{n-1}$ are distinct. In other words, \emph{the geometric significance of $\pi$ is the result of a mathematical pun}.
+Mas essa igualdade é uma coincidência: ela ocorre apenas porque $2^{n-1}$ torna-se igual a $n$ quando $n=2$ (isso é, $2^{2-1} = 2$). Em todas as dimensões superiores, $n$ e $2^{n-1}$ são distintos. Em outras palavras, \emph{o significado geométrico de $\pi$ é resultado de um \fixme{trocadilho} matemático}.
 
   % subsection three_families_of_constants (end)
 

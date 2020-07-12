@@ -1,27 +1,34 @@
-# The Tau Manifesto
+# O Manifesto Tau
 
-This is the LaTeX source of [*The Tau Manifesto*](https://tauday.com/tau-manifesto). Copyright © 2010–2020 by Michael Hartl.
+Este é o fonte LaTeX da tradução para português brasileiro de [*The Tau Manifesto*](https://tauday.com/tau-manifesto).
+Copyright © 2010–2020 by Michael Hartl.
 
-## Translations
+## Traduções
 
-Existing translations:
+Traduções existentes:
 
-* [Spanish](https://tauday.com/el-manifiesto-tau)
-* [Italian](https://tauday.com/il-tau-manifesto)
-* [Russian](https://tauday.com/tau-manifesto-ru)
-* [Chinese](https://tauday.com/tau-manifesto-cn)
+* [Espanhol](https://tauday.com/el-manifiesto-tau)
+* [Italiano](https://tauday.com/il-tau-manifesto)
+* [Russo](https://tauday.com/tau-manifesto-ru)
+* [Chinês](https://tauday.com/tau-manifesto-cn)
 
-The steps for translating the manifesto into a new language depend on a number of factors. 
+Os passos para traduzir o manifesto em um novo idioma dependem de um número de fatores.
 
-If you are translating to an “easy” language (e.g., one that uses the Latin alphabet) and have deep technical skills:
+Se você está traduzindo para um idioma “fácil” (ou seja, um que usa o alfabeto latino) e tem traquejo com tecnologia:
 
-1. [Fork the repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and add me (`mhartl`) as a collaborator.
-2. Install the `softcover` Ruby gem and get the document to build locally by following the instructions in [*The Softcover Book*](https://manual.softcover.io/book). (If your system isn't already configured as a Ruby development environment, see [*Learn Enough Dev Environment to Be Dangerous*](https://www.learnenough.com/dev-environment-tutorial).)
-3. Edit the file `chapters/tau_manifesto.tex` to make the translation. See especially the section “[Foreign-language support](https://manual.softcover.io/book/customization#sec-foreign_language)” in the Softcover manual.
-4. Once the translation is nearing completion, send email to michael@michaelhartl.com for further instructions.
+1. [Crie um fork do repositório](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) e adicione-me (`mhartl`) como um colaborador.
+2. Instale o Ruby gem `softcover` e gere o documento localmente seguindo as instruções de [*The Softcover Book*](https://manual.softcover.io/book). (Se o seu sistema ainda não estiver configurado como um ambiente de desenvolvimento Ruby, leia [*Learn Enough Dev Environment to Be Dangerous*](https://www.learnenough.com/dev-environment-tutorial).)
+3. Edite o arquivo `chapters/tau_manifesto.tex` para fazer a tradução. Leia especialmente a seção “[Foreign-language support](https://manual.softcover.io/book/customization#sec-foreign_language)” do manual do Softcover.
+4. Quando a tradução estiver quase completa, envie um email para michael@michaelhartl.com para receber novas instruções.
 
-If you are translating to a “hard” language (e.g., Russian or Chinese) or aren’t as comfortable with technology:
+Se você está traduzindo para um idioma “difícil” (por exemplo, Russo ou Chinês) ou se não se sente muito confortável com tecnologia:
 
-1. [Fork the repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and add me (`mhartl`) as a collaborator.
-2. Edit the file `html/tau_manifesto.html` directly, taking care to preview it in a web browser to make sure it looks OK.
-3. Once the translation is complete, send an email to michael@michaelhartl.com with the HTML attached as a separate file.
+1. [Crie um fork do repositório](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) e adicione-me (`mhartl`) como um colaborador.
+2. Edite o arquivo `html/tau_manifesto.html` diretamente, tomando o cuidado de visualizá-lo em um navegador web para ter certeza de que ele parece OK.
+3. Quando a tradução estiver completa, envie um email para michael@michaelhartl.com com o HTML anexado como um arquivo separado.
+
+## Sobre a tradução para o português brasileiro
+
+Eu não sou matemático e nem tradutor profissional, de modo que não tenho grandes expectativas quanto à qualidade da minha tradução.
+
+Se você tiver qualquer crítica ou sugestão em relação à tradução, fique à vontade para me enviar um [*pull request*](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), abrir um [issue](https://github.com/gnustavo/tau_manifesto/issues) ou enviar um email direto para `gustavo` `at` `gnustavo.com`.

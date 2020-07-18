@@ -452,20 +452,20 @@ a_0 = \frac{\hbar^2}{m e^2},
 \sum_{i=1}^n \theta_i=(n-2)\pi.
  \]
 </div><p class="noindent">Este problema foi tratado em “<span class="inline_math">\( \pi \)</span> Está Errado!”, que observa o seguinte: “A soma dos ângulos internos [de um triângulo] é <span class="inline_math">\( \pi \)</span>, concedido.<span class="intersentencespace"></span> Mas a soma dos ângulos <em>externos</em> de <em>qualquer</em> polígono, a partir da qual a soma dos ângulos interiores pode ser facilmente derivada, e que se generaliza à integral da curvatura de uma simples curva fechada, é <span class="inline_math">\( 2\pi \)</span>.”<span class="intersentencespace"></span> Além disso, O Manifesto Pi oferece a fórmula para a área de um <span class="inline_math">\( n \)</span>-gono com raio unitário (a distância do centro ao vértice),</p>
-<div class="equation">\[  A=n\sen\frac{\pi}{n}\cos\frac{\pi}{n},  \]
+<div class="equation">\[  A=n\sen{\frac{\pi}{n}}\cos\frac{\pi}{n},  \]
 </div><p class="noindent">chamando-a de “claramente… outra vitória para <span class="inline_math">\( \pi \)</span>.”<span class="intersentencespace"></span> Mas usando a identidade de ângulo duplo <span class="inline_math">\( \sen\theta\cos\theta = \frac{1}{2} \sen 2\theta \)</span> mostra que isso pode ser reescrito como</p>
-<div class="equation">\[  A = n/2\, \sen\frac{2\pi}{n},  \]
+<div class="equation">\[  A = n/2\, \sen{\frac{2\pi}{n}},  \]
 </div><p class="noindent">que é apenas</p>
 <div id="eq-area_polygon" data-tralics-id="uid64" data-number="12" class="equation">\begin{equation}
 \label{eq:area_polygon}
-A = \frac{1}{2} n\, \sen\frac{\tau}{n}.
+A = \frac{1}{2} n\, \sen{\frac{\tau}{n}}.
 \end{equation}
 </div><p class="noindent">Em outras palavras, a área de um <span class="inline_math">\( n \)</span>-gono possui um fator natural de <span class="inline_math">\( 1/2 \)</span>.<span class="intersentencespace"></span> De fato, tomando o limite da <a href="tau_manifesto.html#eq-area_polygon" class="hyperref">Eq. (<span class="ref">12</span>)</a> como <span class="inline_math">\( n\rightarrow \infty \)</span> (e aplicando a <a href="https://mathworld.wolfram.com/LHospitalsRule.html" target="_blank" rel="noopener">regra de L’Hôpital</a>) dá a área de um polígono regular unitário com infinitos lados, ou seja, um círculo unitário:</p>
 <div id="eq-lhopital" data-tralics-id="uid65" data-number="13" class="equation">\begin{equation}
 \label{eq:lhopital}
 \begin{split}
-A &amp; = \lim_{n\rightarrow\infty} \frac{1}{2} n\, \sen\frac{\tau}{n} \\
-  &amp; = \frac{1}{2} \lim_{n\rightarrow\infty} \frac{\sen\frac{\tau}{n}}{1/n} \\
+A &amp; = \lim_{n\rightarrow\infty} \frac{1}{2} n\, \sen{\frac{\tau}{n}} \\
+  &amp; = \frac{1}{2} \lim_{n\rightarrow\infty} \frac{\sen{\frac{\tau}{n}}}{1/n} \\
   &amp; = \tfrac{1}{2}\tau.
 \end{split}
 \end{equation}

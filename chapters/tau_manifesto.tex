@@ -533,20 +533,20 @@ O Manifesto Pi também examina algumas fórmulas para polígonos regulares de $n
 \sum_{i=1}^n \theta_i=(n-2)\pi.
 \]
 Este problema foi tratado em ``$\pi$ Está Errado!'', que observa o seguinte: ``A soma dos ângulos internos [de um triângulo] é $\pi$, concedido. Mas a soma dos ângulos \emph{externos} de \emph{qualquer} polígono, a partir da qual a soma dos ângulos interiores pode ser facilmente derivada, e que se generaliza à integral da curvatura de uma simples curva fechada, é $2\pi$.'' Além disso, O Manifesto Pi oferece a fórmula para a área de um $n$-gono com raio unitário (a distância do centro ao vértice),
-\[ A=n\sen\frac{\pi}{n}\cos\frac{\pi}{n}, \]
+\[ A=n\sen{\frac{\pi}{n}}\cos\frac{\pi}{n}, \]
 chamando-a de ``claramente\ldots\ outra vitória para $\pi$.'' Mas usando a identidade de ângulo duplo $\sen\theta\cos\theta = \frac{1}{2} \sen 2\theta$ mostra que isso pode ser reescrito como
-\[ A = n/2\, \sen\frac{2\pi}{n}, \]
+\[ A = n/2\, \sen{\frac{2\pi}{n}}, \]
 que é apenas
 \begin{equation}
 \label{eq:area_polygon}
-A = \frac{1}{2} n\, \sen\frac{\tau}{n}.
+A = \frac{1}{2} n\, \sen{\frac{\tau}{n}}.
 \end{equation}
 Em outras palavras, a área de um $n$-gono possui um fator natural de $1/2$. De fato, tomando o limite da Eq.~\eqref{eq:area_polygon} como $n\rightarrow \infty$ (e aplicando a \href{https://mathworld.wolfram.com/LHospitalsRule.html}{regra de L'H\^{o}pital}) dá a área de um polígono regular unitário com infinitos lados, ou seja, um círculo unitário:
 \begin{equation}
 \label{eq:lhopital}
 \begin{split}
-A & = \lim_{n\rightarrow\infty} \frac{1}{2} n\, \sen\frac{\tau}{n} \\
-  & = \frac{1}{2} \lim_{n\rightarrow\infty} \frac{\sen\frac{\tau}{n}}{1/n} \\
+A & = \lim_{n\rightarrow\infty} \frac{1}{2} n\, \sen{\frac{\tau}{n}} \\
+  & = \frac{1}{2} \lim_{n\rightarrow\infty} \frac{\sen{\frac{\tau}{n}}}{1/n} \\
   & = \tfrac{1}{2}\tau.
 \end{split}
 \end{equation}

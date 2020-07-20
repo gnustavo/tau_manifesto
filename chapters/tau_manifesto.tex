@@ -107,7 +107,7 @@ e nos valores da \href{https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_zeta_de_Ri
 \]
 Essas fórmulas não foram escolhidas a dedo---abra seu livro favorito de física ou matemática e tente você mesmo. Há \href{http://www.harremoes.dk/Peter/Undervis/Turnpage/Turnpage1.html}{muitos outros exemplos} e a conclusão é clara: há algo de especial em~$2\pi$.
 
-Para chegar ao fundo deste mistério devemos retornar aos princípios fundamentais, considerando a natureza dos círculos e, especialmente, a natureza dos \emph{ângulos}. Embora seja provável que grande parte deste material soe familiar, vale a pena revisitá-lo, pois é neste ponto que o verdadeiro entendimento de $\tau$.
+Para chegar ao fundo deste mistério devemos retornar aos princípios fundamentais, considerando a natureza dos círculos e, especialmente, a natureza dos \emph{ângulos}. Embora seja provável que grande parte deste material soe familiar, vale a pena revisitá-lo, pois é neste ponto que o verdadeiro entendimento de $\tau$ começa.
 
   \subsection{Círculos e ângulos} % (fold)
   \label{sec:circles_and_angles}
@@ -238,7 +238,7 @@ Dependendo do caminho escolhido, a seguinte equação pode ser provada como um t
 \label{eq:eulers_formula}
 e^{i\theta} = \cos\theta + i\sen\theta. \qquad\mbox{Fórmula de Euler}
 \end{equation}
-Conhecida como a \emph{fórmula de Euler} (em honra de \href{https://pt.wikipedia.org/wiki/Leonhard_Euler}{Leonhard Euler}), esta equação relaciona uma exponencial com argumento imaginário às funções do círculo seno e cosseno e à unidade imaginária~$i$. Embora justificar a fórmula de Euler esteja além do escopo deste manifesto, sua origem está acima de qualquer suspeita e sua importância é inquestionável.
+Conhecida como a \emph{fórmula de Euler} (em honra a \href{https://pt.wikipedia.org/wiki/Leonhard_Euler}{Leonhard Euler}), esta equação relaciona uma exponencial com argumento imaginário às funções do círculo seno e cosseno e à unidade imaginária~$i$. Embora justificar a fórmula de Euler esteja além do escopo deste manifesto, sua origem está acima de qualquer suspeita e sua importância é inquestionável.
 
 Avaliando a Eq.~\eqref{eq:eulers_formula} em $\theta = \tau$ obtemos como resultado a \emph{identidade de Euler}:\footnote{Aqui, eu estou definindo implicitamente a identidade de Euler como \emph{a exponencial complexa da constante do círculo}, em vez de defini-la como a exponencial complexa de qualquer número específico. Se escolhermos $\tau$ como constante do círculo, obtemos a identidade mostrada. Como veremos em breve, essa não é a forma tradicional da identidade, que obviamente envolve $\pi$, mas a versão com $\tau$ é a forma \emph{matematicamente} mais significativa da identidade, de modo que eu acredito que merece esse nome.}
 \begin{equation}
@@ -816,7 +816,7 @@ Da mesma forma, para a área de superfície, temos
 \end{equation}
 com a mesma constante de recorrência~$2^2\lambda$.
 
-Assim, em ambas as Eq.~\eqref{eq:volume_recurrence} e Eq.~\eqref{eq:surface_area_recurrence}, a constante que relaciona as diferentes dimensões não é $\lambda$ propriamente, mas a combinação $2^2\lambda$. Comparando com a Eq.~\eqref{eq:tau_lambda}, vemos que este não é outro que $\tau$! De fato, uma \href{https://en.wikipedia.org/wiki/Volume_of_an_n-ball#The_two-dimension_recursion_formula}{derivação alternativa} da recorrência do volume por cálculo direto (que usa $R$ onde escrevemos $r$) conclui com a integral
+Assim, em ambas as Eq.~\eqref{eq:volume_recurrence} e Eq.~\eqref{eq:surface_area_recurrence}, a constante que relaciona as diferentes dimensões não é $\lambda$ propriamente, mas a combinação $2^2\lambda$. Comparando com a Eq.~\eqref{eq:tau_lambda}, vemos que este não é outro que não o~$\tau$! De fato, uma \href{https://en.wikipedia.org/wiki/Volume_of_an_n-ball#The_two-dimension_recursion_formula}{derivação alternativa} da recorrência do volume por cálculo direto (que usa $R$ onde escrevemos $r$) conclui com a integral
 \begin{equation}
 \label{eq:integral_recurrence}
 \begin{split}
@@ -854,7 +854,7 @@ Ao discutir esferas $n$-dimensionais em geral, por conveniência, \linebreak esc
   \subsection{Três famílias de constantes} % (fold)
   \label{sec:three_families_of_constants}
 
-Equipado com as ferramentas desenvolvidas na Seção~\ref{sec:volume_of_a_hypersphere}, estamos prontos agora para chegar ao fundo da questão sobre $\pi$ e $\tau$. Para concluir a escavação, usaremos as Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambda} para definir duas famílias de constantes e, em seguida, usar a definição de $\pi$ (Eq.~\eqref{eq:pi}) para definir um terceiro, revelando assim exatamente o que há de errado com~$\pi$.
+Equipado com as ferramentas desenvolvidas na Seção~\ref{sec:volume_of_a_hypersphere}, estamos prontos agora para chegar ao fundo da questão sobre $\pi$ e $\tau$. Para concluir a escavação, usaremos as Eq.~\eqref{eq:surface_area_lambda} e Eq.~\eqref{eq:volume_lambda} para definir duas famílias de constantes e, em seguida, usar a definição de $\pi$ (Eq.~\eqref{eq:pi}) para definir uma terceira, revelando assim exatamente o que há de errado com~$\pi$.
 
 Primeiro, definiremos uma família de ``constantes da área de superfície'' $\tau_n$ dividindo \linebreak a Eq.~\eqref{eq:surface_area_lambda} por $r^{n-1}$, a potência de $r$ necessária para produzir uma constante adimensional para cada valor de~$n$:
 \begin{equation}
@@ -925,7 +925,7 @@ Ao longo dos anos, ouvi muitos argumentos contra a incorretude de $\pi$ e contra
 
 \begin{itemize}
 
-  \item \textbf{Você está falando sério?} \\ Claro. Quero dizer, estou me divertindo com isso, e o tom é geralmente leve, mas há um propósito sério. Definir a constante do círculo como a circunferência sobre o diâmetro é uma convenção estranha e confusa. Embora eu adorasse ver os matemáticos mudarem seus hábitos, eu não estou particularmente preocupado com eles; eles podem cuidar de si mesmos. É com os neófitos que estou mais preocupado, pois eles é que sofrem as consequências: como observado na Seção~\ref{sec:circles_and_angles}, $\pi$ é um desastre pedagógico. Tente explicar a uma criança de doze anos (ou a alguém de trinta anos) por que a medida do ângulo para um oitavo de círculo---uma fatia de pizza---é $\pi/8$. Espere, eu quis dizer $\pi/4$. Entendeu o que eu quis dizer? É loucura---pura e simples.
+  \item \textbf{Você está falando sério?} \\ Claro. Quero dizer, estou me divertindo com isso, e o tom é geralmente leve, mas há um propósito sério. Definir a constante do círculo como a circunferência sobre o diâmetro é uma convenção estranha e confusa. Embora adorasse ver os matemáticos mudarem seus hábitos, não estou particularmente preocupado com eles; eles podem cuidar de si mesmos. É com os neófitos que estou mais preocupado, pois eles é que sofrem as consequências: como observado na Seção~\ref{sec:circles_and_angles}, $\pi$ é um desastre pedagógico. Tente explicar a uma criança de doze anos (ou a alguém de trinta anos) por que a medida do ângulo para um oitavo de círculo---uma fatia de pizza---é $\pi/8$. Espere, eu quis dizer $\pi/4$. Entendeu o que eu quis dizer? É loucura---pura e simples.
 
   \item \textbf{Como podemos mudar de $\pi$ para $\tau$?} \\ Na próxima vez que você escrever algo que usa a constante do círculo, basta dizer ``por conveniência, definimos $\tau = 2\pi$'' e prossiga como de costume. (Obviamente, isto pode levar à pergunta: ``Por que você quer fazer isso?'', e admito que seria interessante poder fazer referência a uma explicação. Se ao menos alguém escrevesse, digamos, um \emph{manifesto} sobre o assunto\ldots) A maneira de levar as pessoas a começar a usar $\tau$ é começar a usá-lo você mesmo.
 
